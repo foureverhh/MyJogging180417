@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/user_name"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+        <EditText
+            android:id="@+id/signUpUserName"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/input_user_name_here"/>
+    </LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/signUpWithEmail"
+    android:layout_below="@id/userName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/e_mail"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+    <EditText
+        android:id="@+id/signUpEmail"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/input_email_here"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/signUpWithEmail"
+        android:id="@+id/logInWithPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/password"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+        <EditText
+            android:id="@+id/signUpPassword"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/input_password_here"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Buttons"
+        android:layout_below="@id/logInWithPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/confirm"
+            android:text="@string/confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:onClick="signUp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

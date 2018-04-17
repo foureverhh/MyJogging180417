@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyJogging180417</string>
+    <string name="input_email_here">Input Email Here</string>
+    <string name="input_password_here">Input Password Here</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="btn_log_in">log in</string>
+    <string name="btn_sign_up">sign up</string>
+    <string name="user_name">User Name</string>
+    <string name="input_user_name_here">Input User Name Here</string>
+    <string name="confirm">confirm</string>
 </resources>
